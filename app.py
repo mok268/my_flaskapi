@@ -5,8 +5,6 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
-
-
 @app.route('/api/employees', methods=['GET'])
 def get_employees():
     employees = EmpModel.query.all()
